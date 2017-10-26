@@ -1,0 +1,4 @@
+In order to add aliases to bash shell add it in file named=== .bash_aliases 
+In order to add setting adjustment to vim add it to file named=== .vimrc
+
+
