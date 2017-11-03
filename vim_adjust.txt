@@ -1,0 +1,15 @@
+keys used for moving within vim
+
+j,k ==> moving up and down
+l,h ==> moving right and left 
+
+number before the j,k,l,h specifies how many lines/words to move
+for ex 10j or 10k moves 10 lines up/down and 10l or 10h moves 10 words left/right
+
+A,I ==> moves to the end/start of the line respectively
+
+u ==> for undo the last change made
+
+
+
+
