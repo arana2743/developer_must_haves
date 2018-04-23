@@ -1,0 +1,27 @@
+install jdk in ubuntu 
+
+Step1
+$ sudo tar xvzf jdk-8u5-linux-i586.tar.gz -C /usr/java
+
+Step 2
+$ JAVA_HOME=/usr/java/jdk1.8.0_05/
+$ sudo update-alternatives --install /usr/bin/java java ${JAVA_HOME%*/}/bin/java 20000
+$ sudo update-alternatives --install /usr/bin/javac javac ${JAVA_HOME%*/}/bin/javac 20000
+
+Step 3
+$ update-alternatives --config java
+
+below type of output will be there 
+
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                           Priority   Status
+------------------------------------------------------------
+* 0            /opt/java/jdk1.8.0_05/bin/java                  20000     auto mode
+  1            /opt/java/jdk1.8.0_05/bin/java                  20000     manual mode
+  2            /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java   1061      manual mode
+
+Press enter to keep the current choice[*], or type selection number:
+
+Step 4
+$ java -version
