@@ -1,0 +1,3 @@
+ways to refresh terminal without terminating it
+
+tset or reset
