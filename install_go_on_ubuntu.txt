@@ -1,3 +1,27 @@
-install golang on ubuntu 18.04
-
+From apt-get : 
+1. install golang on ubuntu 18.04
 sudo apt-get install golang-go
+
+
+Manual go lang installation and upgrades to new version
+
+1. remove exisiting package
+sudo apt-get purge golang*
+
+2. download the latest package and extract to /usr/local/
+tar -C /usr/local -xvzf [package-name]
+
+3. create a .go dir in home folder(easy link to install necessary files without admin privileges)
+mkdir ~/.go
+
+4. set up the following go env variables
+GOROOT=/usr/local/go
+GOPATH=~/.go
+PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+5. update the go command
+sudo update-alternatives --install "/usr/bin/go" "go" "/usr/local/go/bin/go" 0
+sudo update-alternatives --set go /usr/local/go/bin/go
+
+6. test the go version
+go version
