@@ -1,1 +1,1 @@
-# developer_must_haves
+# Developer Must Have Hacks for development :)
