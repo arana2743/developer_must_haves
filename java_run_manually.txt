@@ -1,0 +1,7 @@
+To run java file locally into output folder in terminal
+
+1. To compile .java file into 'out' folder
+  javac -d out/ src/<file-name>.java
+
+2. And then run the .class file from 'out' folder
+  java -cp out/ <class-name>
