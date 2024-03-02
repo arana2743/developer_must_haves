@@ -5,3 +5,11 @@ To run java file locally into output folder in terminal
 
 2. And then run the .class file from 'out' folder
   java -cp out/ <class-name>
+
+
+And in VSCode with help of code-runner extension you can run .java file with below settings:
+
+"code-runner.runInTerminal":true,
+"code-runner.executorMap": {
+  "java": "cd $dir && mkdir -p out && javac -d out/ $fileName && java -cp out/ $fileNameWithoutExt",
+}
